@@ -1,0 +1,20 @@
+{
+  "name": "reminders-api",
+  "version": "1.0.0",
+  "description": "reminders app's api man",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "test": "echo 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dillonchr/reminders-api.git"
+  },
+  "author": "@dillonchr",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/dillonchr/reminders-api/issues"
+  },
+  "homepage": "https://github.com/dillonchr/reminders-api#readme"
+}
