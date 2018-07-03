@@ -2,7 +2,6 @@ const fs = require('fs');
 
 module.exports = {
     getRemindersForUser(userId, callback) {
-        console.log('reminders', userId);
         const remindersPath = `data/all.json`;
         fs.readFile(remindersPath, (err) => {
             if (err) {
@@ -15,5 +14,12 @@ module.exports = {
                 }
             }
         });
+    },
+    addReminderForUser(userId, reminder, callback) {
+        if (!reminder.when || !reminder.what) {
+            callback(1);
+        } else {
+            callback(null, 1);
+        }
     }
 }
